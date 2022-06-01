@@ -6,7 +6,6 @@ public class CalculadoraCientifica  extends CalculadoraComum {
     private double expoente, seno, cosseno, tangente, logaritmo;
     public CalculadoraCientifica(int adicao,int subtracao, int divisao, int multiplicacao, double expoente, int raizQuadrada, double seno,
                                  double cosseno, double tangente, double logaritmo) {
-        super();
         this.expoente = expoente;
         this.raizQuadrada = raizQuadrada;
         this.seno = seno;
