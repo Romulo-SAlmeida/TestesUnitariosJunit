@@ -1,101 +1,94 @@
 package Calculadora;
 
-import java.util.Scanner;
 public class Calculadora {
-    Scanner scan = new Scanner(System.in);
-    public CalculadoraComum cal1 = new CalculadoraComum();
-    CalculadoraCientifica cal2 = new CalculadoraCientifica(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 
+    private int adicao,subtracao, divisao, mutiplicacao, raizQuadrada;
+    private double expoente, seno, cosseno, tangente, logaritmo;
 
-
-    //Metodo da adição
-    public void adicao(){
-        int a = 5;
-        int b = 5;
-        int result = a + b;
-        System.out.println(result);
+    public int getAdicao() {
+        return adicao;
     }
 
-    //Metodo de subtração
-    public void subtracao() {
-        int a = 5;
-        int b = 2;
-        int result = a - b;
-        System.out.println(result);
+    public void setAdicao(int adicao) {
+        this.adicao = adicao;
     }
 
-    //Metodo de mutiplicação
-    public void mutiplicacao() {
-        int a = 5;
-        int b = 5;
-        int result = a * b;
-        System.out.println(result);
+
+    public int getSubtracao() {
+
+        return subtracao;
     }
 
-    //Metodo de divisão
-    public void divisao() {
-        int a = 5;
-        int b = 4;
-        int result = a / b;
-        if(b == 0){
-            System.out.println(a);
-        }
-        System.out.println(result);
+    public void setSubtracao(int subtracao) {
+        this.subtracao = subtracao;
     }
 
-    //Metodo de raiz
-    public void raiz() {
-        double raizq = Math.sqrt(5);
-        System.out.println(raizq);
+    public int getDivisao() {
+        return divisao;
     }
 
-    //Metodo da potencia
-    public void potencia() {
-        int a = 5;
-        int b = 2;
-        double expo = (Math.pow(a, b));
-        System.out.println(expo);
+    public void setDivisao(int divisao) {
+        this.divisao = divisao;
     }
 
-    //Metodo de seno
-    public void seno() {
-        int angulo = 5;
-        double rad = (Math.PI/180) * angulo;
-        double seno = Math.sin(rad);
-        System.out.println("\nO Seno do angulo " + angulo + " e: " + Math.sin(rad));
-        int hip = 6;
-        double result = seno*hip;
-        System.out.println("Resultado final: "+result);
+    public int getMutiplicacao() {
+        return mutiplicacao;
     }
 
-    //Metodo do Cosseno
-    public void cosseno() {
-        int angulo = 8;
-        double rad = (Math.PI/180) * angulo;
-        double cos = Math.sin(rad);
-        System.out.println("\nO Seno do angulo " + angulo + " e: " + Math.sin(rad));
-        int hip = 6;
-        double result = cos*hip;
-        System.out.println("Resultado final: "+result);
+    public void setMutiplicacao(int mutiplicacao) {
+        this.mutiplicacao = mutiplicacao;
     }
 
-    //Metodo da tangente
-    public void tangente() {
-        int angulo = 6;
-        double rad = (Math.PI/180) * angulo;
-        double tangente = Math.tan(rad);
-        System.out.println("\nA Tangente do angulo " + angulo + " e: " + Math.tan(rad));
-        double catetoAdjacente = 8;
-        double result = tangente * catetoAdjacente;
-        System.out.println("Resultado Final: "+result);
+
+
+
+
+    public double getExpoente() {
+        return expoente;
     }
 
-    //Metodo de logaritmo
-    public void logaritmo() {
-        int numero = 9;
-        double result = Math.log(numero);
-        System.out.println(result);
+    public void setExpoente(double expoente) {
+        this.expoente = expoente;
+    }
+
+    public int getRaizQuadrada() {
+        return raizQuadrada;
+    }
+
+    public void setRaizQuadrada(int raizQuadrada) {
+        this.raizQuadrada = raizQuadrada;
+    }
+
+    public double getSeno() {
+        return seno;
+    }
+
+    public void setSeno(double seno) {
+        this.seno = seno;
+    }
+
+    public double getCosseno() {
+        return cosseno;
+    }
+
+    public void setCosseno(double cosseno) {
+        this.cosseno = cosseno;
+    }
+
+    public double getTangente() {
+        return tangente;
+    }
+
+    public void setTangente(double tangente) {
+        this.tangente = tangente;
+    }
+
+    public double getLogaritmo() {
+        return logaritmo;
+    }
+    public void setLogaritmo(double logaritmo) {
+        this.logaritmo = logaritmo;
     }
 
 

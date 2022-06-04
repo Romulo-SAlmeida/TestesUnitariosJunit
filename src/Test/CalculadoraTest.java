@@ -1,20 +1,19 @@
 package Test;
 
-import Calculadora.Calculadora;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CalculadoraTest extends Calculadora {
+public class CalculadoraTest {
 
 
         //METODO DE ADIÇÃO
         @Test
         public void adicao(){
-            int a = 5;
-            int b = 5;
+            int a = 3;
+            int b = 3;
             int result = a + b;
             System.out.println(result);
-            int expResult = 10;
+            int expResult = 6;
             assertEquals(expResult, result, 0);
         }
 

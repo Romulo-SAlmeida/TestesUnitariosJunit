@@ -1,43 +1,43 @@
 package Calculadora;
 
-import java.util.Scanner;
 
-public class CalculadoraComum {
+public class CalculadoraComum extends Calculadora {
 
-    Scanner scan = new Scanner(System.in);
-    private int adicao,subtracao, divisao, mutiplicacao;
 
-    public int getAdicao() {
-        return adicao;
+
+    //Metodo da adição
+    public int adicao(){
+        int a = 3;
+        int b = 3;
+        int result = a + b;
+        return result;
     }
 
-    public void setAdicao(int adicao) {
-        this.adicao = adicao;
+    //Metodo de subtração
+    public int subtracao() {
+        int a = 5;
+        int b = 2;
+        int result = a - b;
+        return result;
     }
 
-
-    public int getSubtracao() {
-
-        return subtracao;
+    //Metodo de mutiplicação
+    public int mutiplicacao() {
+        int a = 5;
+        int b = 5;
+        int result = a * b;
+        return result;
     }
 
-    public void setSubtracao(int subtracao) {
-        this.subtracao = subtracao;
-    }
-
-    public int getDivisao() {
-        return divisao;
-    }
-
-    public void setDivisao(int divisao) {
-        this.divisao = divisao;
-    }
-
-    public int getMutiplicacao() {
-        return mutiplicacao;
-    }
-
-    public void setMutiplicacao(int mutiplicacao) {
-        this.mutiplicacao = mutiplicacao;
+    //Metodo de divisão
+    public int divisao() {
+        int a = 5;
+        int b = 5;
+        int result = a / b;
+        if(b == 0){
+            System.out.println(a);
+        }
+        System.out.println(result);
+        return result;
     }
 }
